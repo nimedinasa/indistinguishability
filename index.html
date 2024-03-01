@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indistinguishability 2024</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         /* Global styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #EEE8AA; /* Inspired by Gustav Klimt */
-            color: #333;
+            background-color: #f9f9f9;
         }
         header {
             background-color: #333;
@@ -23,6 +23,7 @@
             font-family: 'Arial Black', sans-serif;
             font-size: 3em;
             margin-bottom: 20px;
+            color: #333;
         }
         nav {
             background-color: #444;
@@ -34,9 +35,6 @@
             left: 0;
             width: 200px;
             overflow-y: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
         nav a {
             display: block;
@@ -53,19 +51,23 @@
             padding: 100px 20px;
             text-align: center;
             background-color: #f9f9f9;
-            display: none;
         }
         h2 {
             margin-bottom: 20px;
             font-family: 'Arial Black', sans-serif;
             font-size: 2em;
+            color: #333;
         }
         p {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 1.2em;
+            color: #333;
         }
 
         /* Apply animations to sections */
+        #about, #schedule, #speakers, #registration, #contact {
+            display: none;
+        }
         #about:target, #schedule:target, #speakers:target, #registration:target, #contact:target {
             display: block;
         }
