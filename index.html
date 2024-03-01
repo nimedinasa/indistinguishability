@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>N-M-S</title>
+</head>
+
+<body>
+
+    <div class="split-screen">
+        <div class="left-panel">
+            <div class="header">
+                <img src="image.jpg" alt="Your Logo">
+                <h1>Nicolas Medina Sanchez</h1>
+                <h2>math, physics and computation</h2>
+            </div>
+            <ul>
+                <li onclick="toggleSection('section1')">About me</li>
+                <li onclick="toggleSection('section2')">Projects</li>
+                <li onclick="toggleSection('section3')">Publications</li>
+                <li onclick="toggleSection('section4')">Contact</li>
+            </ul>
+        </div>
+
+        <div class="right-panel">
+             <section class="header">
+                 <pp id="pp">Don't look.</pp>
+             </section>
+            
+            <section class="fancy-section" id="section1">
+                <h2>About me</h2>
+                <div class="content">I like math. And how to use it to address foundational problems in physics and computer science. I am a PhD student in the Dakic group, in the University of Vienna.</div>
+            </section>
+
+            <section class="fancy-section" id="section2">
+                <h2>Projects</h2>
+                <div class="content">I work in operational reconstructions of quantum theory, the quantum-to-classical transition, non-Kolmogorovian probability theory, alternative axiomatisations of general relativity, indefinite causality in quantum mechanics, new semantics for higher-order computation and the origin of spacetime.</div>
+            </section>
+
+            <section class="fancy-section" id="section3">
+                <h2>Publications</h2>
+                <div class="content">.</div>
+            </section>
+
+            <section class="fancy-section" id="section4">
+                <h2>Contact</h2>
+                <div class="content">nicolas.medina.sanchez@univie.ac.at</div>
+            </section>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
+
