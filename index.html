@@ -5,78 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific Conference 2024</title>
     <style>
-        /* Add your CSS styles here */
+        /* Global styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+        section {
+            padding: 50px 20px;
             text-align: center;
+            background-color: #f9f9f9;
         }
-        nav {
-            background-color: #444;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
         }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+        p {
+            font-size: 1.2em;
         }
-        main {
-            padding: 20px;
+
+        /* Animation styles */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Apply animations to sections */
+        #about {
+            animation: fadeIn 1s ease-out;
+        }
+
+        #schedule {
+            animation: slideInLeft 1s ease-out;
+        }
+
+        #speakers {
+            animation: slideInRight 1s ease-out;
+        }
+
+        #registration {
+            animation: fadeIn 1s ease-out;
+        }
+
+        #contact {
+            animation: slideInLeft 1s ease-out;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Scientific Conference 2024</h1>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#schedule">Schedule</a>
-        <a href="#speakers">Speakers</a>
-        <a href="#registration">Registration</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About the Conference</h2>
-            <p>Provide information about the conference, its theme, objectives, and any other relevant details.</p>
-        </section>
-        <section id="schedule">
-            <h2>Conference Schedule</h2>
-            <p>Include the schedule of the conference, including dates, times, and topics of sessions, workshops, and presentations.</p>
-        </section>
-        <section id="speakers">
-            <h2>Speakers</h2>
-            <p>List the keynote speakers, presenters, and panelists with their bios and affiliations.</p>
-        </section>
-        <section id="registration">
-            <h2>Registration</h2>
-            <p>Provide information about how to register for the conference, registration fees, and any deadlines.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Include contact information for inquiries about the conference, such as email addresses and phone numbers.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Scientific Conference. All rights reserved.</p>
-    </footer>
+    <section id="about">
+        <h2>About the Conference</h2>
+        <p>Provide information about the conference, its theme, objectives, and any other relevant details.</p>
+    </section>
+    <section id="schedule">
+        <h2>Conference Schedule</h2>
+        <p>Include the schedule of the conference, including dates, times, and topics of sessions, workshops, and presentations.</p>
+    </section>
+    <section id="speakers">
+        <h2>Speakers</h2>
+        <p>List the keynote speakers, presenters, and panelists with their bios and affiliations.</p>
+    </section>
+    <section id="registration">
+        <h2>Registration</h2>
+        <p>Provide information about how to register for the conference, registration fees, and any deadlines.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Include contact information for inquiries about the conference, such as email addresses and phone numbers.</p>
+    </section>
 </body>
 </html>
+
