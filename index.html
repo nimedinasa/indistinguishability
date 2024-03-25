@@ -10,6 +10,11 @@
             src: url('BebasNeue-Regular.ttf') format('truetype');
             /* Optionally, you can specify font-weight and font-style here */
         }
+        @font-face {
+            font-family: 'YourCustomFont2';
+            src: url('Thicker-Regular-trial.ttf') format('truetype');
+            /* Optionally, you can specify font-weight and font-style here */
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -47,6 +52,10 @@
             font-family: 'YourCustomFont', Arial, sans-serif;
         }
 
+         p {
+            font-family: 'YourCustomFont2', Arial, sans-serif;
+        }
+
 
         /* CSS for speakers grid */
         .speakers-grid {
@@ -74,7 +83,6 @@
         <a href="#" onclick="showSection('about')">About</a>
         <a href="#" onclick="showSection('speakers')">Speakers</a>
         <a href="#" onclick="showSection('schedule')">Schedule</a>
-        <a href="#" onclick="showSection('registration')">Registration</a>
         <a href="#" onclick="showSection('contact')">Contact</a>
     </nav>
     <div class="content">
@@ -99,42 +107,42 @@
                 <div class="speaker">
                     <img src="speaker1.jpg" alt="Speaker 1">
                     <h3>Malte Tichy</h3>
-                    <p>Description of Speaker 1.</p>
+                    <p>Aarhus University</p>
                 </div>
                 <div class="speaker">
                     <img src="speaker2.jpg" alt="Speaker 2">
                     <h3>Tomasz Bigaj</h3>
-                    <p>Description of Speaker 2.</p>
+                    <p>University of Warsaw</p>
                 </div>
                  <div class="speaker">
                     <img src="speaker2.jpg" alt="Speaker 3">
                     <h3>Ugo Marzolino</h3>
-                    <p>Description of Speaker 2.</p>
+                    <p>University of Trieste</p>
                 </div>
                  <div class="speaker">
                     <img src="speaker2.jpg" alt="Speaker 4">
                     <h3>Pablo Arrighi</h3>
-                    <p>Description of Speaker 2.</p>
+                    <p>Universite Paris-Saclay</p>
                 </div>
                  <div class="speaker">
                     <img src="speaker2.jpg" alt="Speaker 5">
                     <h3>Paolo Perinotti</h3>
-                    <p>Description of Speaker 2.</p>
+                    <p>University of Pavia</p>
                 </div>
                  <div class="speaker">
                     <img src="speaker2.jpg" alt="Speaker 6">
                     <h3>Neli Stoilova</h3>
-                    <p>Description of Speaker 2.</p>
+                    <p>Bulgarian Academy of Sciences</p>
                 </div>
                  <div class="speaker">
                     <img src="speaker2.jpg" alt="Speaker 7">
                     <h3>Philip Goyal</h3>
-                    <p>Description of Speaker 2.</p>
+                    <p>University of Albany, SUNY</p>
                 </div>
                  <div class="speaker">
                     <img src="speaker2.jpg" alt="Speaker 8">
                     <h3>Borivoje Dakic</h3>
-                    <p>Description of Speaker 2.</p>
+                    <p>University of Vienna</p>
                 </div>
                 <!-- Add more speakers as needed -->
             </div>
@@ -143,10 +151,7 @@
             <h2>Schedule</h2>
             <p>View the conference schedule.</p>
         </section>
-        <section id="registration" class="hidden">
-            <h2>Registration</h2>
-            <p>Register for the conference.</p>
-        </section>
+        
         <section id="contact" class="hidden">
             <h2>Contact</h2>
             <p>Contact us for more information.</p>
